@@ -16,6 +16,7 @@ public class Jdpcconnection {
 
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT * FROM student");
+			
 
 			while(rs.next()) {
 				// Ensure correct data type retrieval
