@@ -1,6 +1,7 @@
 package array;
 class Students{
 	public String name;
+	public int rollno;
 	
 	Students(String name){
 		this.name=name;
