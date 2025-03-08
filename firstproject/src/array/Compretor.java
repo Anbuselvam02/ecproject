@@ -25,7 +25,7 @@ class Studentad {
  }
 }
 
-abstract class Sortbyroll implements Comparator<Studentad> {
+ class Sortbyroll implements Comparator<Studentad> {
 
  public int compare(Studentad a, Studentad b)
  {
@@ -47,7 +47,7 @@ public class Compretor {
 	     for (int i = 0; i < arr.length; i++)
 	         System.out.println(arr[i]);
 
-	     Arrays.sort(arr, 1, 2);
+	     Arrays.sort(arr, new Sortbyroll());
 
 	     System.out.println("\nSorted by rollno");
 	     for (int i = 0; i < arr.length; i++)
